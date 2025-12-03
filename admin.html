@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Seller Dashboard - Fresh Fram to Table</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="account-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+            <h1 class="sitename">AgriMart</h1>
+          </a>
+
+          <form class="search-form desktop-search-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for products">
+              <button class="btn" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+            <button class="header-action-btn mobile-search-toggle d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+              <i class="bi bi-search"></i>
+            </button>
+
+            <div class="dropdown account-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-person"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Welcome to <span class="sitename">AgriMart</span></h6>
+                  <p class="mb-0">Access account &amp; manage orders</p>
+                </div>
+                <div class="dropdown-body">
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-person-circle me-2"></i>
+                    <span>My Profile</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-bag-check me-2"></i>
+                    <span>My Orders</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-heart me-2"></i>
+                    <span>My Wishlist</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-gear me-2"></i>
+                    <span>Settings</span>
+                  </a>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="register.html" class="btn btn-primary w-100 mb-2">Sign In</a>
+                  <a href="login.html" class="btn btn-outline-primary w-100">Register</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="account.html" class="header-action-btn d-none d-md-block">
+              <i class="bi bi-heart"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <a href="cart.html" class="header-action-btn">
+              <i class="bi bi-cart3"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html"><span>Products</span></a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+
+            <li class="products-megamenu-1"><a href="#"><span>Featured</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul class="mobile-megamenu">
+                <li><a href="#">Featured Products</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Sale Items</a></li>
+              </ul>
+              <div class="desktop-megamenu">
+                <div class="megamenu-tabs">
+                  <ul class="nav nav-tabs" id="productMegaMenuTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured-content-1862" type="button" aria-selected="true" role="tab">Featured</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">New Arrivals</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">Sale</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="megamenu-content tab-content">
+                  <div class="tab-pane fade show active" id="featured-content-1862" role="tabpanel" aria-labelledby="featured-tab">
+                    <div class="product-grid">
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/jalapeno.png" alt="Featured Product" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                          <h5>Jalapeno</h5>
+                          <p class="price">₱29.99</p>
+                          <a href="#" class="btn-view">Checkout</a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+            </li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="collapse" id="mobileSearch">
+      <div class="container">
+        <form class="search-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for products">
+            <button class="btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Seller Dashboard</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Seller Account</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="account" class="account section">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <div class="profile-menu">
+              <div class="user-info">
+                <div class="user-avatar">
+                  <img src="assets/img/person/person-f-1.webp" alt="Seller Profile">
+                  <span class="status-badge" style="background-color: #007bff;"><i class="bi bi-shop"></i></span>
+                </div>
+                <h4>Angela</h4>
+                <div class="user-status">
+                  <i class="bi bi-check-circle-fill text-success"></i>
+                  <span>Verified Seller</span>
+                </div>
+              </div>
+
+              <nav class="menu-nav">
+                <ul class="nav flex-column nav-pills" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#dashboard">
+                      <i class="bi bi-speedometer2"></i>
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#inventory" id="nav-inventory">
+                      <i class="bi bi-box-seam"></i>
+                      <span>My Products</span>
+                      <span class="badge bg-secondary" id="product-count-badge">0</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#add-product" id="nav-add-product">
+                      <i class="bi bi-plus-circle"></i>
+                      <span>Add New Product</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#settings">
+                      <i class="bi bi-gear"></i>
+                      <span>Store Settings</span>
+                    </a>
+                  </li>
+                </ul>
+                
+                <div class="menu-footer">
+                  <a href="#" class="help-link">
+                    <i class="bi bi-question-circle"></i>
+                    <span>Seller Support</span>
+                  </a>
+                  <a href="#" class="logout-link">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Log Out</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="content-area">
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="dashboard">
+                  <div class="section-header">
+                    <h2>Overview</h2>
+                  </div>
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="stats-item p-4 rounded-4 bg-light border text-center">
+                        <i class="bi bi-currency-dollar fs-1 text-success mb-2"></i>
+                        <h3>₱12,450</h3>
+                        <p class="mb-0 text-muted">Total Sales</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="stats-item p-4 rounded-4 bg-light border text-center">
+                        <i class="bi bi-box-seam fs-1 text-primary mb-2"></i>
+                        <h3 id="dashboard-count">3</h3>
+                        <p class="mb-0 text-muted">Active Products</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="stats-item p-4 rounded-4 bg-light border text-center">
+                        <i class="bi bi-people fs-1 text-warning mb-2"></i>
+                        <h3>156</h3>
+                        <p class="mb-0 text-muted">Profile Visits</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="inventory">
+                  <div class="section-header">
+                    <h2>My Inventory</h2>
+                    <button class="btn btn-sm btn-primary" onclick="switchToTab('add-product')">
+                      <i class="bi bi-plus-lg"></i> Add New
+                    </button>
+                  </div>
+
+                  <div class="seller-product-grid" id="seller-products-container">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="add-product">
+                  <div class="section-header">
+                    <h2 id="form-title">Add New Product</h2>
+                  </div>
+                  
+                  <form id="product-form" class="checkout-form">
+                    <input type="hidden" id="edit-mode-index" value="-1">
+                    
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="form-group mb-3">
+                          <label for="product-name" class="form-label">Product Name</label>
+                          <input type="text" class="form-control" id="product-name" placeholder="e.g. Organic Carrots" required>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="product-category" class="form-label">Category</label>
+                            <select class="form-select" id="product-category">
+                              <option value="Vegetables">Vegetables</option>
+                              <option value="Fruits">Fruits</option>
+                              <option value="Spices">Spices</option>
+                              <option value="Bundles">Bundles</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="product-price" class="form-label">Price (₱)</label>
+                            <input type="number" class="form-control" id="product-price" placeholder="0.00" step="0.01" required>
+                          </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                          <label for="product-desc" class="form-label">Description</label>
+                          <textarea class="form-control" id="product-desc" rows="4" placeholder="Describe your product..."></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label class="form-label">Product Image</label>
+                        <div class="image-preview-container mb-3" onclick="document.getElementById('product-image').click()">
+                          <img id="image-preview" src="" style="display: none;">
+                          <i id="image-icon" class="bi bi-cloud-upload"></i>
+                        </div>
+                        <input type="file" id="product-image" class="form-control" accept="image/*" style="display: none;" onchange="previewImage(this)">
+                        <p class="text-muted small text-center">Click box to upload image</p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-4">
+                      <button type="submit" class="btn btn-primary btn-lg flex-grow-1" id="save-btn">Publish Product</button>
+                      <button type="button" class="btn btn-outline-secondary btn-lg" onclick="resetForm()">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="tab-pane fade" id="settings">
+                  <div class="section-header">
+                    <h2>Store Settings</h2>
+                  </div>
+                  <form class="settings-form">
+                    <div class="mb-3">
+                      <label class="form-label">Shop Name</label>
+                      <input type="text" class="form-control" value="Farm Fresh Co.">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Pickup Address</label>
+                      <textarea class="form-control" rows="2">MV8J+FJW, T. De Castro Street, Bulan, 4706 Sorsogon</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="index.html" class="logo">
+                <span class="sitename">AgriMart</span>
+              </a>
+              <p>Your trusted partner for farm-fresh organic products. We bridge the gap between local farmers and your kitchen table.</p>
+              <div class="social-links mt-4">
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Shop</h4>
+              <ul class="footer-links">
+                <li><a href="product.html">Vegetables</a></li>
+                <li><a href="product.html">Fruits</a></li>
+                <li><a href="#">Bundles</a></li>
+                <li><a href="#">New Arrivals</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Company</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tos.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Contact Us</h4>
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>MV8J+FJW, T. De Castro Street, Bulan, 4706 Sorsogon</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>support@agrimart.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom py-3 text-center border-top border-secondary">
+      <div class="container">
+        <p class="mb-0 text-white-50">&copy; 2024 <strong>AgriMart</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sellers-product.js"></script>
+
+</body>
+
+</html>

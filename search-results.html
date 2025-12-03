@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Search Results - Fresh Farm to Table</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="search-results-page">
+
+  <header id="header" class="header sticky-top">
+
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+            <h1 class="sitename">AgriMart</h1>
+          </a>
+
+          <!-- Search -->
+          <form class="search-form desktop-search-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for products">
+              <button class="btn" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+            <!-- Mobile Search Toggle -->
+            <button class="header-action-btn mobile-search-toggle d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- Account -->
+            <div class="dropdown account-dropdown">
+              <button class="header-action-btn" data-bs-toggle="dropdown">
+                <i class="bi bi-person"></i>
+              </button>
+              <div class="dropdown-menu">
+                <div class="dropdown-header">
+                  <h6>Welcome to <span class="sitename">AgriMart</span></h6>
+                  <p class="mb-0">Access account &amp; manage orders</p>
+                </div>
+                <div class="dropdown-body">
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-person-circle me-2"></i>
+                    <span>My Profile</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-bag-check me-2"></i>
+                    <span>My Orders</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-heart me-2"></i>
+                    <span>My Wishlist</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="account.html">
+                    <i class="bi bi-gear me-2"></i>
+                    <span>Settings</span>
+                  </a>
+                </div>
+                <div class="dropdown-footer">
+                  <a href="register.html" class="btn btn-primary w-100 mb-2">Sign In</a>
+                  <a href="login.html" class="btn btn-outline-primary w-100">Register</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wishlist -->
+            <a href="account.html" class="header-action-btn d-none d-md-block">
+              <i class="bi bi-heart"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Cart -->
+            <a href="cart.html" class="header-action-btn">
+              <i class="bi bi-cart3"></i>
+              <span class="badge">0</span>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html"><span>Products</span></a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            
+
+            <!-- Products Featured -->
+            <li class="products-megamenu-1"><a href="#"><span>Featured</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+              <!-- Products Featured Mobile View -->
+              <ul class="mobile-megamenu">
+
+                <li><a href="#">Featured Products</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Sale Items</a></li>
+
+              </ul><!-- End Products Featured Mobile View -->
+
+              <!-- Products Featured Desktop View -->
+              <div class="desktop-megamenu">
+
+                <div class="megamenu-tabs">
+                  <ul class="nav nav-tabs" id="productMegaMenuTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured-content-1862" type="button" aria-selected="true" role="tab">Featured</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">New Arrivals</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale-content-1862" type="button" aria-selected="false" tabindex="-1" role="tab">Sale</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Tabs Content -->
+                <div class="megamenu-content tab-content">
+
+                  <!-- Featured Tab -->
+                  <div class="tab-pane fade show active" id="featured-content-1862" role="tabpanel" aria-labelledby="featured-tab">
+                    <div class="product-grid">
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/jalapeno.png" alt="Featured Product" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                          <h5>Jalapeno</h5>
+                          <p class="price">₱29.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/chili.png" alt="Featured Product" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                          <h5>Chili</h5>
+                          <p class="price">₱19.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/garlic.png" alt="Featured Product" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                          <h5>Garlic</h5>
+                          <p class="price">₱18.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/ginger.png" alt="Featured Product" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                          <h5>Ginger</h5>
+                          <p class="price">₱17.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- New Arrivals Tab -->
+                  <div class="tab-pane fade" id="new-content-1862" role="tabpanel" aria-labelledby="new-tab">
+                    <div class="product-grid">
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/cauliflower.png" alt="New Arrival" loading="lazy">
+                          <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Cauliflower</h5>
+                          <p class="price">₱69.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/eggplant.png" alt="New Arrival" loading="lazy">
+                          <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Eggplant</h5>
+                          <p class="price">₱39.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/cucumber.png" alt="New Arrival" loading="lazy">
+                          <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Cucumber</h5>
+                          <p class="price">₱49.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/celery.png" alt="New Arrival" loading="lazy">
+                          <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Celery</h5>
+                          <p class="price">₱59.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sale Tab -->
+                  <div class="tab-pane fade" id="sale-content-1862" role="tabpanel" aria-labelledby="sale-tab">
+                    <div class="product-grid">
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/Dragon Fruit.png" alt="Sale Product" loading="lazy">
+                          <span class="badge-sale">-30%</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Dragon Fruit</h5>
+                          <p class="price"><span class="original-price">₱89.99</span> ₱62.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/strawberry.png" alt="Sale Product" loading="lazy">
+                          <span class="badge-sale">-25%</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Strawberry</h5>
+                          <p class="price"><span class="original-price">₱59.99</span> ₱44.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/Green apple.png" alt="Sale Product" loading="lazy">
+                          <span class="badge-sale">-40%</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Green Apple</h5>
+                          <p class="price"><span class="original-price">₱49.99</span> ₱29.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-image">
+                          <img src="assets/img/product/cherry.png" alt="Sale Product" loading="lazy">
+                          <span class="badge-sale">-20%</span>
+                        </div>
+                        <div class="product-info">
+                          <h5>Cherry</h5>
+                          <p class="price"><span class="original-price">₱39.99</span> ₱31.99</p>
+                          <a href="#" class="btn-view">View Product</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div><!-- End Products Featured Desktop View -->
+
+            </li><!-- End Products Featured -->
+
+            <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Mobile Search Form -->
+    <div class="collapse" id="mobileSearch">
+      <div class="container">
+        <form class="search-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for products">
+            <button class="btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Search Results Header Section -->
+    <section id="search-results-header" class="search-results-header section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="search-results-header">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="results-count" data-aos="fade-right" data-aos-delay="200">
+                <h2>Search Results</h2>
+                <p>We found <span class="results-number">24</span> results for <span class="search-term">"Lorem ipsum"</span></p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <form method="post" class="search-form">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..." name="search" value="Lorem ipsum" required="">
+                  <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="search-filters mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="filter-tags">
+                  <span class="filter-label">Filters:</span>
+                  <div class="tags-wrapper">
+                    <span class="filter-tag">
+                      Category: Blog
+                      <i class="bi bi-x-circle"></i>
+                    </span>
+                    <span class="filter-tag">
+                      Date: Last Month
+                      <i class="bi bi-x-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                <div class="sort-options">
+                  <label for="sort-select" class="me-2">Sort by:</label>
+                  <select id="sort-select" class="form-select form-select-sm d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="title-asc">Title A-Z</option>
+                    <option value="title-desc">Title Z-A</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Search Results Header Section -->
+
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="best-sellers section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+
+          <!-- Product 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=butterhead-lettuce" class="product-link">
+                <img src="assets/img/product/butterhead-lettuce.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Butterhead lettuce</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱25.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 1 -->
+
+          <!-- Product 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=carrot" class="product-link">
+                <img src="assets/img/product/carrot.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Carrot</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 2 -->
+
+          <!-- Product 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=cauliflower" class="product-link">
+                <img src="assets/img/product/cauliflower.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Cauliflower</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱65.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 3 -->
+
+          <!-- Product 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=celery" class="product-link">
+                <img src="assets/img/product/celery.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Celery</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱16.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 4 -->
+
+          <!-- Product 5 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=chili" class="product-link">
+                <img src="assets/img/product/chili.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Chili</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 5 -->
+
+          <!-- Product 6 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=cucumber" class="product-link">
+                <img src="assets/img/product/cucumber.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Cucumber</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱20.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 6 -->
+
+          <!-- Product 7 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=eggplant" class="product-link">
+                <img src="assets/img/product/eggplant.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Eggplant</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 7 -->
+
+          <!-- Product 8 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=bitter-gourd" class="product-link">
+                <img src="assets/img/product/fresh-bitter-gourd.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Bitter gourd</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 8 -->
+
+          <!-- Product 9 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=garlic" class="product-link">
+                <img src="assets/img/product/garlic.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Garlic</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 9 -->
+
+          <!-- Product 10 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=ginger" class="product-link">
+                <img src="assets/img/product/ginger.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Ginger</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 10 -->
+
+          <!-- Product 11 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=green-beans" class="product-link">
+                <img src="assets/img/product/green beans.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Green beans</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 11 -->
+
+          <!-- Product 12 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=green-chili-peppers" class="product-link">
+                <img src="assets/img/product/green chili peppers.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Green chili peppers</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 12 -->
+
+          <!-- Product 13 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=green-lettuce" class="product-link">
+                <img src="assets/img/product/green lettuce.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Lettuce</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱16.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 13 -->
+
+          <!-- Product 14 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=jalapeno" class="product-link">
+                <img src="assets/img/product/jalapeno.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Jalapeno</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 14 -->
+
+          <!-- Product 15 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=kale" class="product-link">
+                <img src="assets/img/product/Kale.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Kale</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱20.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 15 -->
+
+          <!-- Product 16 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=okra" class="product-link">
+                <img src="assets/img/product/okra.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Okra</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱12.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 16 -->
+
+          <!-- Product 17 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=onion" class="product-link">
+                <img src="assets/img/product/onion.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Onion</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 17 -->
+
+          <!-- Product 18 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=potato" class="product-link">
+                <img src="assets/img/product/potato.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Potato</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">$20.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 18 -->
+
+          <!-- Product 19 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=romaine" class="product-link">
+                <img src="assets/img/product/romaine cos lettuce.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Romaine cos lettuce</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱16.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 19 -->
+
+          <!-- Product 20 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=tomato" class="product-link">
+                <img src="assets/img/product/tomato.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Tomato</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱6.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 20 -->
+
+          <!-- Product 21 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=apple" class="product-link">
+                <img src="assets/img/product/apple.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Apples</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱16.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 21 -->
+
+          <!-- Product 22 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=banana" class="product-link">
+                <img src="assets/img/product/banana.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Banana</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱25.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 22 -->
+
+          <!-- Product 23 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=blueberries" class="product-link">
+                <img src="assets/img/product/blueberries.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Blue Berries</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱12.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 23 -->
+
+          <!-- Product 24 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=kiwi" class="product-link">
+                <img src="assets/img/product/kiwi.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Kiwi</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱12.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 24 -->
+
+          <!-- Product 25 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=mandarin" class="product-link">
+                <img src="assets/img/product/mandarin.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Mandarin</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 25 -->
+
+          <!-- Product 26 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=papaya" class="product-link">
+                <img src="assets/img/product/papaya.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Papaya</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱18.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 26 -->
+
+          <!-- Product 27 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=watermelon" class="product-link">
+                <img src="assets/img/product/watermelon.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Watermelon</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱30.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 27 -->
+
+          <!-- Product 28 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=raspberry" class="product-link">
+                <img src="assets/img/product/raspberry.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Raspberry</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱10.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 28 -->
+
+          <!-- Product 29 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=rambutan" class="product-link">
+                <img src="assets/img/product/rambutan.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Rambutan</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱20.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 29 -->
+
+          <!-- Product 30 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=passion-fruits" class="product-link">
+                <img src="assets/img/product/passion-fruits.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Passion fruits</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">$₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 30 -->
+
+          <!-- Product 31 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=mangosteen" class="product-link">
+                <img src="assets/img/product/mangosteen.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Mangosteen</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱15.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 31 -->
+
+          <!-- Product 32 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=guava" class="product-link">
+                <img src="assets/img/product/guava.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Guava</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱5.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 32 -->
+
+          <!-- Product 33 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=custer-apple" class="product-link">
+                <img src="assets/img/product/custard-apple.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Custard apple</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱65.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 33 -->
+
+          <!-- Product 34 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=coconut" class="product-link">
+                <img src="assets/img/product/coconut.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Coconut</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱10.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 34 -->
+
+          <!-- Product 35 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=cantaloupe" class="product-link">
+                <img src="assets/img/product/cantaloupe.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Cantaloupe</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱16.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 35 -->
+
+          <!-- Product 36 -->
+          <div class="col-lg-3 col-md-6 product-item-wrapper" data-category="fruits">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="product-details.html?id=black-currant" class="product-link">
+                <img src="assets/img/product/black-currant.png" alt="Product Image" class="img-fluid" loading="lazy">
+                </a>
+                <div class="product-actions">
+                  <button class="action-btn wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </button>
+                  <button class="action-btn compare-btn">
+                    <i class="bi bi-arrow-left-right"></i>
+                  </button>
+                  <button class="action-btn quickview-btn">
+                    <i class="bi bi-zoom-in"></i>
+                  </button>
+                </div>
+                
+              </div>
+              <div class="product-info">
+                <h4 class="product-name">Black current</h4>
+                <div class="price-rating-container">
+                  <div class="product-price">₱8.00</div>
+                  <div class="product-rating">
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <span class="rating-count">(56)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Product 36 -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Best Sellers Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="index.html" class="logo">
+                <span class="sitename">AgriMart</span>
+              </a>
+              <p>Your trusted partner for farm-fresh organic products. We bridge the gap between local farmers and your kitchen table.</p>
+              <div class="social-links mt-4">
+                <div class="social-icons">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Shop</h4>
+              <ul class="footer-links">
+                <li><a href="product.html">Vegetables</a></li>
+                <li><a href="product.html">Fruits</a></li>
+                <li><a href="#">Bundles</a></li>
+                <li><a href="#">New Arrivals</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Company</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tos.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Contact Us</h4>
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>MV8J+FJW, T. De Castro Street, Bulan, 4706 Sorsogon</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>support@agrimart.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom py-3 text-center border-top border-secondary">
+      <div class="container">
+        <p class="mb-0 text-white-50">&copy; 2024 <strong>AgriMart</strong>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
